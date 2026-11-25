@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "statstools"
+version = "0.1.0"
+description = "初中数学统计量计算与出题工具：平均数、中位数、众数、极差、方差与练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["数学", "统计", "平均数", "中位数", "众数", "方差", "初中", "练习纸", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+statstools = "statstools.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/statstools"
+Source = "https://github.com/eastyou/statstools"
+
+[tool.setuptools]
+packages = ["statstools"]
